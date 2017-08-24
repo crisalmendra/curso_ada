@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>formularios</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		
+		<form action="" method="get">
+			<!-- form es un elemento en bloque, todos los campos que ponga los pongo entre estas 2 etiquetas. Form tien 2 atributos "action (hacia donde ej: "send_mail.php") y metod (como viaja la informacion)" Dentro hay 2 etiquetas 1)label (tiene un atributo) y input  tiene 2 atributos (type y name)(campos de textos chicos como por ejemplo nombre, email, chekbox (tiene un atributo "checked" (pueden ser varias opciones) otra opcion es radio button (siempre es una u otra opcion)) etc)-->
+			<div>
+				<label for="nombre">nombre</label> <!-- con el for vinculo label con el id del input-->
+				<input type="text" name="nombre" id="nombre"
+				placeholder="escribi tu nombre" required> <!--el name despues lo voy a usar para validar en javascrip, tengo que poner id siempre para vincularlo con el label, placerholder es para que aparezca texto en la casilla a completas, el required indica que es obligatorio completar el campo -->
+			</div>
+			<div>
+				<label for="apellido">apellido</label>
+				<input type="text" name="">
+				<label for="edad">edad</label>
+				<input type="number"  min="1" max="99" name="edad" id="edad" value="34"> <!--value para que me aparezca un valor al comienzo-->
+			</div>
+			<div>
+				<label for="nacimiento">Fecha de nacimiento</label>
+				<input type="date" name="nacimiento" id="nacimiento">
+			</div>
+			
+			<div>
+				<label id="email">email</label>
+				<input type="email" name="email" id="email">
+			</div>
+			<div>
+				<label for="password">password</label>
+				<input type="password" name="" id="password">
+			</div>
+			<div>
+				<label for="algoconrango">algoconrango</label>
+				<input type="range" id="algoconrango" name="algoconrango" required>
+			</div>
+			<div>
+				<label for="terminos y condiciones">acepta terminos y condiciones</label>
+				<input id="terminos y condiciones" checked="true" type="checkbox" name="terminos y condiciones">
+			</div>
+			<div>
+				<label for="terminos y condiciones-si">si</label>
+				<input id="terminos y condiciones-si" type="radio" name="terminos y condiciones"">
+				<label for="terminos y condiciones-no">no</label>
+				<input id="terminos y condiciones-no" type="radio" name="terminos y condiciones"">
+				<!--el html en este caso sabe que tiene que elegir entre uno de los 2 por eso le ponemos el mismo name a los 2 imputs para vincularlos-->
+			</div>
+			
+			<div>
+				<button type="subtim">enviar</button>
+				<button type="reset">limpiar</button>
+				<button type="button">no hace nada</button>
+				<!-- hay 3 tipos de botones (submit(envia el formulario es por defecto) o reset(limpia todo el formulario) o button (no hace nada, deja el botton sin funcionalidad para que despues con javascrip le de funcionalidad), segun el metodo que haya utilzado)
+				el  atributo es type
+				imput tiene un atributo mas que se llama "placeholder"-->
+			</div>
+			<div>
+				<!-- es el cuadrado grande para ingresar mucho texto-->
+				<label for="mensaje">mensaje</label>
+				<textarea id="mensaje" placeholder="escribi algo"></textarea><!--para que funcione el holder no tiene que haber espacios entre >< -->
+			</div>
+			<div>
+				<input type="file" name="foto"> <!--para adjuntar un archivo-->
+			</div>
+			<div>
+				<!--<label for="algoqueseseleccione>seleccione algo</label>
+				<select name="algoqueseseleccione">-->
+					<select id="algoqueseseleccione" name="algoqueseseleccione">
+						<option disabled="true" selected="true">seleccione una</option>
+						<option>opcion 1</option>
+						<option>opcion 2</option>
+						<option>opcion 3</option>
+					</select>
+				</div>
+			</form>
+		</body>
+	</html>
