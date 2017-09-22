@@ -1,0 +1,67 @@
+*{
+	margin: 0auto;
+	box-sizing: border-box;
+}
+
+
+
+#container {
+	background-image: url(../img/granadas.jpg);
+	background-repeat: no-repeat; 
+	width: 100%;
+	background-position: center;
+	height: 1200px;
+	
+}
+/*-------------header------------*/
+header{
+	width: 100%;
+	height: 200px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+header h1{
+	
+	color: #21036E;
+	text-align: center;
+	text-decoration: none;
+	font-family: "Merienda One", cursive;
+	font-size: 50px;
+
+
+}
+
+header h1:hover{
+	color: #FFC9A2;
+    font-style: bold;
+}
+
+header h2{
+font-family: "open sans";
+font-size: 30px;
+color: #1C157F;
+}
+
+/***************finheader***********/
+
+
+footer{
+	height: 100px;
+	width: 100%;
+	background-color: #FCCEB0;
+	margin-top: 10px;
+	padding: 30px 50px 0px 0px;
+	display: flex;
+	justify-content: flex-end;
+	
+
+
+}
+
+footer img{
+	margin: 10px 10px 10px 10px;
+
+
+}

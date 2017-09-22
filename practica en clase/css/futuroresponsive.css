@@ -1,0 +1,44 @@
+*{
+	margin:0auto;
+	
+	box-sizing: border-box;
+}
+
+#container{
+	height: 1250px;
+	width: 100%;
+	text-align: center;
+	
+}
+
+#cabecera{
+	height: 150px;
+	border: 5px solid;
+	
+}
+	
+}
+
+#menu{
+	float: left;
+	width: 30%;
+	background: #E90F0F;
+	height: 300px;
+	display: inline-block;
+}
+
+#contenido{
+	float: left;
+	width: 85%;
+	background: #19F619;
+	height: 800px;
+	padding: 2em;
+
+}
+
+#pie{
+	clear: both;
+	background: #FE250F;
+	height: 100px;
+	
+}

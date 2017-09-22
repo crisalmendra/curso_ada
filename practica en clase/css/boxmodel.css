@@ -1,0 +1,16 @@
+h1{
+	width: 200px;
+	height: 200px;
+	background-color: yellow;
+	text-align: center;
+	/*
+	border: width style color;
+	border: 10px double black;*/
+    border-bottom-style: dashed;
+    border-bottom-width: 10px;
+	border-radius: 50%;
+
+}
+
+
+estilos de lineas (solid, dotted, dashed, double, groove, ridge, inset, outsed,  )

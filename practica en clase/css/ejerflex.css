@@ -1,0 +1,92 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: #F8BE40;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+header{
+	display: flex;
+	flex-direction: row;
+	padding: 50px;
+    width: 100%;
+    background: rgba(255,255,255,0.5);
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .menu a{
+	font-size: 30px;
+	color: black;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+header .menu a:hover{
+	font-weight: bold;
+}
+
+.contenedor{
+	width: 80%;
+	height: 600px;
+	position: relative;
+}
+
+.contenido{
+	width: 750px;
+	height: 600px;
+	background: #1DF31D;
+	position: absolute;
+	top: 0%;
+}
+
+.sidebar{
+	width: 300px;
+	height: 600px;
+	background: #E005D3;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+
+/*  formas de ordenar los divs
+    Con flex trabajo sobre el padre(contenedor)
+
+ contenedor
+           {
+	display:flex;
+	flex-direction: row;
+	flex-wrap:wrap;
+         	}
+ 
+otra posibilidad de acomodarlos con float
+o acomodarlos con display. 
+Aqui trabajo sobre los hijos 
+
+section, aside
+          {
+	float: left;
+	}
+
+
+section{
+	withd: 70%;
+}
+
+aside{
+	widht: 30%;
+}
+
+*/
+
+
+/*-----------medias----------*/
+@media screen and (max-width: 800px){
+	section
+}

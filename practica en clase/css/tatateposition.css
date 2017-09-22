@@ -1,0 +1,54 @@
+* {
+	margin: 0 auto;
+	padding: 0 auto;
+}
+
+#contenedor {
+	width: 90%;
+	margin: 0 auto;
+	height: 900px;
+    
+
+}
+
+.columnas{
+	margin: 0 auto;
+	height: 300px;
+    width: 50%
+}
+
+.cubos {
+	display: inline-block;
+width: 30%;
+height: 300px;  
+border: solid; 
+position: relative;
+margin:-4px;
+
+
+}
+/*
+.uno{
+	position: relative;
+}*/
+
+.izq {
+	background-color: #16CAF0;
+}
+
+.centro{
+	background-color: #1308F7;
+}
+
+
+img {
+	width: 200px;
+	height: 200px;
+    position: absolute;
+    z-index: 2;
+    padding: 2.5em 2.5em; 
+    margin-left: 0em;
+
+	
+
+}

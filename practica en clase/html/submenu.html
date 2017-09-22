@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>submenu</title>
+	<style>
+*{
+	margin: 0;
+	padding: 0;
+}
+
+		nav{
+			background: cyan;
+			position:relative;
+		}
+
+nav .submenu{
+position: absolute;
+display: none;
+}
+
+nav .ancla:hover .submenu{
+	display: block;
+}
+
+nav .submenu li{
+display: inline-block;
+}
+
+nav ul li{
+	display: inline-block;
+
+}
+	</style>
+	</head>
+
+<body>
+<header>
+<nav>
+	<ul>
+		<li class="ancla1">home</li>
+		<li class="ancla">portfolio
+		<ul class="submenu">
+			<div >
+			<li>fotos</li>
+			<li>sitios</li>
+			</div>
+			<div>
+			<li>sitios</li>
+			<li>fotos</li>
+			</div>
+		</ul>
+		</li>
+		<li>contactos</li>
+	</ul>
+</nav>
+</header>
+	
+</body>
+</html>

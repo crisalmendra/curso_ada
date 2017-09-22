@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>vertical</title>
+	<style>
+		/*.vertical{
+			background: cyan;
+			text-align: center;
+			padding: 120px; /*puedo darle altura la altura al div usando el padding cuando es mas de un linea.
+			la altura y la altura de la linea se usa para la alineacion cuando solo tengo una linea.
+			height: 300px;
+			text-align: center;
+			line-height: 300px; /*solo me sirve para alinear una sola linea de texto dentro de un elemento con la misma altura
+		}
+
+		.horizontal{
+			background: cyan;
+			width: 60%;
+			margin: 0auto;
+			text-align: center;
+		} */
+
+		.padre{
+			background: green;
+			width: 500px;
+			height: 500px;
+			/*podria usar padding para alinear y con el margen "o" auto en el eje horizontal o position*/
+			position: relative;
+			}
+
+		.hijo{
+			width: 250px;
+			height: 250px;
+			background: orange;
+			position: absolute;
+			top: 50%:
+			left: 25%;
+			transform: translateY(-50%);
+
+		}	
+
+	</style>
+</head>
+<body><!--!
+<div class="vertical">
+<p>centrame en vertical</p>
+<p>yo tambien</p>
+</div>
+<div class="horizontal">
+	<p>dale centrame</p>
+</div>
+	-->
+	<div class="padre">
+		<div class="hijo">
+			<p>en el medio de los tiempos</p>
+		</div>
+	</div>
+</body>
+</html>

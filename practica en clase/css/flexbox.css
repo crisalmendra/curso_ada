@@ -1,0 +1,48 @@
+*   {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body
+   {
+	background: #f2f2f2;
+	font-family: Arial;
+}
+
+.contenedor 
+    {
+	width: 700px;
+	height: 500px;
+	background: #212d40;
+	display: flex;/*afecto el compartamiento de sus hijos*/
+
+/*	flex-direction: row; /*establece la disposicion de los elementos y su sentido. La direccion puede ser: row,
+	y column (Es como en bloque), y puedo modificar su sentido. Row (es como inline) es el valor por defecto
+	
+	flex-wrap: nowrap; /*nowrap es el valor por de efecto. esta propiedad nos permite ajustar el contenido a la caja cuando aumenta el contenido. Determina la existencia o los saltos de linea*/ 
+	flex-flow: wrap ;/*raw (inagura nuevos saltos de linea, acepta dos parametros row (o column) o nowrap; es una propiedad que simplifica las 2 anteriores)*/
+/*
+	justify-content: center; /*establece la alineacion en el eje x (muestra los elemntos en el inicio en el eje x) y su sentido, flex start(se puede asociar con el float left) es el valor por defecto; Tambien puede tener center. Tiene 2 propiedades mas space-betwen (calcula el espacion sobrante y los divide entre los elementos) y space-around (separa el espacion entre los elementos y sus margenes)*/
+	align-items: stretch;/*(baseline, flex-start, flex-end, strech (Estira los elementos para ocupar la altura del contenedor padre))*/
+	
+	align-content:flex-end; /*(me permite alinear filas) tiene varias propiedades (center) y me distribuye el espacio entre filas con space-betwen, o sapce- araund(espacio entre filas verticalmente)*/
+
+}
+
+.caja {
+	width: 100px;
+	/*height: 100px;*/
+	background:#f79256;
+	text-align: center;
+	margin: 20px;
+	padding: 20px;
+	font-size: 40px;
+	color: #fff;
+}
+
+.tres{
+	font-size: 60px;
+}

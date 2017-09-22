@@ -1,0 +1,41 @@
+
+
+
+h3.destacado{
+	color:yellow;
+}
+/*la clase destacado la tienen otros elementos tambien*/
+
+
+Concatena
+h3, .destacado, p, a{
+
+}
+/*la coma concatena.... osea afecta a los h3 "y" a la clase destacado "y" al parrafo "y" al a*/
+
+Selector descendente
+.destacado h3{
+
+}
+
+/*selector desendente (marca jerarquia, afecta al ultimo elemento que esta antes de las llaves*/
+
+
+.general{
+	color: pink;
+}
+
+.resaltado{
+	font-weight: 100px;
+
+}
+
+selector de hijos (es la primera anidacion  hijo el hijo directo (1ero)) (no tiene que haber estructuras intermedias por ejemplo una seccion dentro dentro de un div)
+div > a{
+	color: red;
+}
+
+selector descendente
+div a{
+	color: black;
+}
