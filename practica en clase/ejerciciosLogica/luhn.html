@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Luhn</title>
+</head>
+<body>
+
+	<script>
+		var numero= "36093580156761"
+		var esSegunDigito = false;
+		var total = 0;
+
+		for(var i = numero.length - 1; i >= 0; i--){
+			var x = parseInt(numero.charAt(i));
+
+			if(esSegunDigito){
+			    x = x *2;	
+
+					// if (x >= 10) {
+ 					if (x > 9 ){
+ 						x -= 9;
+ 					}
+
+ 					total -= x;
+
+					//esSegunDigito = false;
+			} else{
+				//total += parseInt(numero.charAt(i)));
+				//esSegundDigito = true;
+				}
+
+				total += x;
+			esSegunDigito = !esSegunDigito;
+
+		}
+
+    // operador ternario (if version abreviada)
+    /*alert(total % 10 === 0 ? /*condicion que evaluo*  "bien ahi" // si la condicion es verdadera  : "mala" // si la condicion es falsa);*/
+    alert(total % 10 === 0 ? "bien ahi" : "mala")
+
+    /* otra opcion
+
+    if (total % 10 === 0){
+	alert ("esta bien");
+	} else{
+	alert ("mala");
+	}
+    }*/
+	</script>
+	
+</body>
+</html>
