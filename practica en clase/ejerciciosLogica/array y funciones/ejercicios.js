@@ -94,7 +94,7 @@ for (i=0; i<n; i++){ //el array mas corto
 
 obs = false;
 for (l=0; l<4; l++){
-	if (x[i]=z[l]){
+	if (x[i]==z[l]){
 		obs=true;
 		break;
 	}
@@ -117,3 +117,36 @@ for (l=0; l<4; l++){
 /*tarea como hago para no volver a contar como una coincidencia las letras repetidas.
 armo un array vacio  (match) para ir guardando las coincidencias y antes de guardarlas hay que compar
 que no se repita . el resultado es 3*/
+
+/*
+var k = 0;
+var match = [];
+var valSame;
+var isFound = false; 
+
+for (i = 0; i< little.length; i++){
+	isFound = false;
+	for(j=0; j<big.length; j++){
+		if(little[i] == big[j]){
+			valSame = little[i];
+			for (var k = 0; k < match.length; k++){
+				if(valSame == match[k]){
+					isFound = true;
+				}
+			}
+			if (isFound == false){
+				match[match.length] = valSame;
+			}
+		}
+	}
+}
+
+console.log("los valores del array match son: " + match);
+console.log ("el array match tiene : " + match.length+ )
+
+
+
+ otra opcion*/
+
+
+

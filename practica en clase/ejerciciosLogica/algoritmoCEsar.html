@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Algoritmo Cesar</title>
+</head>
+<body>
+	<script>
+		 /* abc original
+
+		 1) ABCDEFGHIJKLMNOPQRSTUVWZ
+ 		 2) STUVWXYZABCDEFGHIJKLMNOP
+
+ 		 Ej. de encriptacion:
+ 		 HOLA = ZGDS
+
+ 		 Me tiene que devolver el texto encriptado
+
+ 		 console.log(encriptar("hola"));*/
+
+var arr = ["a","b","c","d"];
+for (var i  = 0; i < 50; i++){
+	var j = i;
+	while (j >= arr.length){
+		j -= arr.length;
+	}
+console.log(i + ": " + arr [j]);
+
+}
+
+/* OPCION MAS EFICIENTE
+var arr = ["a","b","c","d","e"];
+for (var i  = 0; i < 50; i++){
+	
+	console.log(i + ": " + arr [ I % arr.length]);
+}
+
+	</script>
+	
+</body>
+</html>

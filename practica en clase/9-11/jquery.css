@@ -1,0 +1,22 @@
+
+#imagenes{
+	margin: 10px;
+	padding: 10px;
+	background-color: #68FFD3;
+	text-align: center;
+}
+
+.caja{
+	display: inline-block;
+	text-align: center;
+}
+
+#btntexto{
+	text-align: center;
+}
+
+.discos{
+	font-size: 30px;
+	color: #090DFF;
+	font-weight: bold;
+}
